@@ -5,6 +5,7 @@ import "./index.css";
 import ToDo from "./ToDo.jsx";
 import Debouncing from "./Debouncing.jsx";
 import { TodoProvider } from "./context/ToDoContext.jsx";
+import App from "./App.jsx";
 
 createRoot(document.getElementById("roots")).render(
   <StrictMode>
@@ -12,6 +13,7 @@ createRoot(document.getElementById("roots")).render(
     {/* <TodoProvider>
       <ToDo />
     </TodoProvider> */}
-    <Debouncing/>
+    {/* <Debouncing/> */}
+    <App />
   </StrictMode>,
 );
