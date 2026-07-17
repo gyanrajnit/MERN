@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Posts from "./pages/Posts";
 import PostDetail from "./pages/PostDetail";
 import ToDo from "./pages/ToDo";
+import Users from "./pages/Users";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/todos",
     element: <ToDo />,
+  },
+  {
+    path: "/users",
+    element: <Users />,
   },
 ]);
 

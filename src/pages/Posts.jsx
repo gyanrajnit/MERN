@@ -7,6 +7,9 @@ const Posts = () => {
   const getAllPosts = async () => {
     try {
       const res = await fetch(`https://dummyjson.com/posts`);
+      const serverCheck = await fetch(`http://localhost:8082/check-server`);
+      console.log(serverCheck,"serverCheck");
+      
       const json_res = await res.json();
       console.log(json_res, "json_res");
       setPosts(json_res.posts);
